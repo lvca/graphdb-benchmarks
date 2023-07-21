@@ -74,6 +74,9 @@ public class ArcadeProfiler extends AbstractProfiler
 		}
 		catch ( Exception ex )
 		{
+			log.error ( "Error while running {}, query is:\n{}\nError is:", name, gremlinQuery, ex );
+
+			// Count it as failed
 			return -1;
 		}
 	}
