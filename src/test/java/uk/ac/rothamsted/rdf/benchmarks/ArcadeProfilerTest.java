@@ -14,10 +14,10 @@ public class ArcadeProfilerTest
 	@Test
 	public void testBasics ()
 	{
-		var queriesPath = "src/main/assembly/resources/gremlin/";
+		var queriesPath = "src/main/assembly/resources/arcadedb-sql/";
 		// DEBUG queriesPath = "/tmp/queries/";
 		// NOTE: don't store multiple DB in the same server instance, we do not know if this affects performance.
-		var profiler = new ArcadeProfiler ( queriesPath, "biopax", "TestTest" );
+		var profiler = new ArcadeProfiler ( queriesPath, "biopax", "playwithdata" );
 		profiler.profile ( 10 );
 	}
 }
